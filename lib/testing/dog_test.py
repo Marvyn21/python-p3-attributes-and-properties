@@ -19,7 +19,7 @@ class TestDog:
         sys.stdout = captured_out
         Dog(name="")
         sys.stdout = sys.__stdout__
-        assert(captured_out.getvalue() == "Name must be string between 1 and 25 characters.\n")
+        assert(captured_out.getvalue() == "Name must be string between 1 and 25 characters.")
 
     def test_name_string(self):
         '''prints "Name must be string between 1 and 25 characters." if not string.'''
